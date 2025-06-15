@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  8 15:23:40 2025
+# Process ID: 9896
+# Current directory: E:/ARM/ARM/ARM.runs/iF_ARM_synth_1
+# Command line: vivado.exe -log iF_ARM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iF_ARM.tcl
+# Log file: E:/ARM/ARM/ARM.runs/iF_ARM_synth_1/iF_ARM.vds
+# Journal file: E:/ARM/ARM/ARM.runs/iF_ARM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source iF_ARM.tcl -notrace

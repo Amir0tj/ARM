@@ -1,0 +1,11 @@
+verilog xil_defaultlib  \
+"../../../bd/iF_ARM/ip/iF_ARM_Adder_0_0/sim/iF_ARM_Adder_0_0.v" \
+"../../../bd/iF_ARM/ip/iF_ARM_MUX2to1_0_0/sim/iF_ARM_MUX2to1_0_0.v" \
+"../../../bd/iF_ARM/ip/iF_ARM_REG_0_0/sim/iF_ARM_REG_0_0.v" \
+"../../../bd/iF_ARM/ip/iF_ARM_xlconstant_0_0/sim/iF_ARM_xlconstant_0_0.v" \
+"../../../bd/iF_ARM/ip/iF_ARM_blk_mem_gen_2_1/sim/iF_ARM_blk_mem_gen_2_1.v" \
+"../../../bd/iF_ARM/sim/iF_ARM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

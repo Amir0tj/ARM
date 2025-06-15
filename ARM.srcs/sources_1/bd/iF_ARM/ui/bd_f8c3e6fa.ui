@@ -1,0 +1,32 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port flush_0 -pg 1 -y -130 -defaultsOSRD
+preplace port select_0 -pg 1 -y -180 -defaultsOSRD
+preplace port rst_0 -pg 1 -y 20 -defaultsOSRD
+preplace port clk_0 -pg 1 -y -10 -defaultsOSRD
+preplace port freeze_0 -pg 1 -y -240 -defaultsOSRD
+preplace port enable_0 -pg 1 -y -270 -defaultsOSRD
+preplace portBus pc -pg 1 -y -310 -defaultsOSRD
+preplace portBus instruction -pg 1 -y 310 -defaultsOSRD
+preplace portBus in2_0 -pg 1 -y -100 -defaultsOSRD
+preplace inst REG_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst Adder_0 -pg 1 -lvl 3 -y -310 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y -320 -defaultsOSRD
+preplace inst blk_mem_gen_2 -pg 1 -lvl 3 -y 280 -defaultsOSRD
+preplace inst MUX2to1_0 -pg 1 -lvl 2 -y -160 -defaultsOSRD
+preplace netloc clk_0_1 1 0 3 NJ -10 NJ -10 -50J
+preplace netloc Adder_0_out 1 1 3 -310 -390 N -390 440
+preplace netloc blk_mem_gen_2_douta 1 2 2 0 190 440J
+preplace netloc in2_0_1 1 0 2 -810 -140 N
+preplace netloc rst_0_1 1 0 3 NJ 20 NJ 20 -40J
+preplace netloc xlconstant_0_dout 1 1 2 NJ -320 N
+preplace netloc enable_0_1 1 0 3 -810J -380 NJ -380 -20J
+preplace netloc MUX2to1_0_out 1 2 1 -30
+preplace netloc REG_0_out 1 2 2 -10 160 440
+preplace netloc select_0_1 1 0 2 N -180 N
+levelinfo -pg 1 -830 -390 -160 330 470 -top -720 -bot 500
+"
+}
+

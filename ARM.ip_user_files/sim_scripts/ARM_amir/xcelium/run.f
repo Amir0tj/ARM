@@ -1,0 +1,77 @@
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ARM_amir/ip/ARM_amir_Adder_0_1/sim/ARM_amir_Adder_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_MUX2to1_0_1/sim/ARM_amir_MUX2to1_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_REG_0_1/sim/ARM_amir_REG_0_1.v" \
+-endlib
+-makelib xcelium_lib/xlconstant_v1_1_5 \
+  "../../../../ARM.srcs/sources_1/bd/ARM_amir/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlconstant_0_1/sim/ARM_amir_xlconstant_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_ControlUnit_0_0/sim/ARM_amir_ControlUnit_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_ConditionCheck_0_0/sim/ARM_amir_ConditionCheck_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_OR_0_0/sim/ARM_amir_OR_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_OR_1_0/sim/ARM_amir_OR_1_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_RegisterFile_0_0/sim/ARM_amir_RegisterFile_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlconstant_0_2/sim/ARM_amir_xlconstant_0_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_mux2to1_9bit_0_0/sim/ARM_amir_mux2to1_9bit_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_mux2to1_4bit_0_0/sim/ARM_amir_mux2to1_4bit_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_Not_0_0/sim/ARM_amir_Not_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_Not_1_0/sim/ARM_amir_Not_1_0.v" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_1 \
+  "../../../../ARM.srcs/sources_1/bd/ARM_amir/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlconcat_0_0/sim/ARM_amir_xlconcat_0_0.v" \
+-endlib
+-makelib xcelium_lib/xlslice_v1_0_1 \
+  "../../../../ARM.srcs/sources_1/bd/ARM_amir/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_0_0/sim/ARM_amir_xlslice_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_1_0/sim/ARM_amir_xlslice_1_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_2_0/sim/ARM_amir_xlslice_2_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_3_0/sim/ARM_amir_xlslice_3_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_4_0/sim/ARM_amir_xlslice_4_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_5_0/sim/ARM_amir_xlslice_5_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_0_1/sim/ARM_amir_xlslice_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_1_1/sim/ARM_amir_xlslice_1_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_2_1/sim/ARM_amir_xlslice_2_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_IF_Stage_Reg_0_0/sim/ARM_amir_IF_Stage_Reg_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_3_2/sim/ARM_amir_xlslice_3_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_4_2/sim/ARM_amir_xlslice_4_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_5_2/sim/ARM_amir_xlslice_5_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_6_0/sim/ARM_amir_xlslice_6_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_7_0/sim/ARM_amir_xlslice_7_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_8_0/sim/ARM_amir_xlslice_8_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_ID_Stage_Reg_0_5/sim/ARM_amir_ID_Stage_Reg_0_5.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_12_0/sim/ARM_amir_xlslice_12_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_Adder_0_3/sim/ARM_amir_Adder_0_3.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_OR_0_1/sim/ARM_amir_OR_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_ALU_0_0/sim/ARM_amir_ALU_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_Val2Generate_0_0/sim/ARM_amir_Val2Generate_0_0.v" \
+-endlib
+-makelib xcelium_lib/dist_mem_gen_v8_0_12 \
+  "../../../../ARM.srcs/sources_1/bd/ARM_amir/ipshared/d46a/simulation/dist_mem_gen_v8_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ARM_amir/ip/ARM_amir_dist_mem_gen_0_1/sim/ARM_amir_dist_mem_gen_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_0_2/sim/ARM_amir_xlslice_0_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_EXE_Stage_Reg_0_2/sim/ARM_amir_EXE_Stage_Reg_0_2.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_dist_mem_gen_0_0/sim/ARM_amir_dist_mem_gen_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_14_0/sim/ARM_amir_xlslice_14_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_MEM_Stage_Reg_0_1/sim/ARM_amir_MEM_Stage_Reg_0_1.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_mux2to1_32bit_0_0/sim/ARM_amir_mux2to1_32bit_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_HazardUnit_0_0/sim/ARM_amir_HazardUnit_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_StatusRegister_0_0/sim/ARM_amir_StatusRegister_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlslice_15_0/sim/ARM_amir_xlslice_15_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlconstant_0_0/sim/ARM_amir_xlconstant_0_0.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_xlconstant_1_0/sim/ARM_amir_xlconstant_1_0.v" \
+  "../../../bd/ARM_amir/sim/ARM_amir.v" \
+  "../../../bd/ARM_amir/ip/ARM_amir_Not_0_1/sim/ARM_amir_Not_0_1.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  glbl.v
+-endlib
+

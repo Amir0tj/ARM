@@ -1,0 +1,161 @@
+// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// 
+// This file contains confidential and proprietary information
+// of Xilinx, Inc. and is protected under U.S. and
+// international copyright and other intellectual property
+// laws.
+// 
+// DISCLAIMER
+// This disclaimer is not a license and does not grant any
+// rights to the materials distributed herewith. Except as
+// otherwise provided in a valid license issued to you by
+// Xilinx, and to the maximum extent permitted by applicable
+// law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+// BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+// INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+// (2) Xilinx shall not be liable (whether in contract or tort,
+// including negligence, or under any other theory of
+// liability) for any loss or damage of any kind or nature
+// related to, arising under or in connection with these
+// materials, including for any direct, or any indirect,
+// special, incidental, or consequential loss or damage
+// (including loss of data, profits, goodwill, or any type of
+// loss or damage suffered as a result of any action brought
+// by a third party) even if such damage or loss was
+// reasonably foreseeable or Xilinx had been advised of the
+// possibility of the same.
+// 
+// CRITICAL APPLICATIONS
+// Xilinx products are not designed or intended to be fail-
+// safe, or for use in any application requiring fail-safe
+// performance, such as life-support or safety devices or
+// systems, Class III medical devices, nuclear facilities,
+// applications related to the deployment of airbags, or any
+// other applications that could lead to death, personal
+// injury, or severe property or environmental damage
+// (individually and collectively, "Critical
+// Applications"). Customer assumes the sole risk and
+// liability of any use of Xilinx products in Critical
+// Applications, subject only to applicable laws and
+// regulations governing limitations on product liability.
+// 
+// THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+// PART OF THIS FILE AT ALL TIMES.
+// 
+// DO NOT MODIFY THIS FILE.
+
+
+// IP VLNV: xilinx.com:module_ref:ID_Stage_Reg:1.0
+// IP Revision: 1
+
+(* X_CORE_INFO = "ID_Stage_Reg,Vivado 2018.3" *)
+(* CHECK_LICENSE_TYPE = "ARM_amir_ID_Stage_Reg_0_5,ID_Stage_Reg,{}" *)
+(* CORE_GENERATION_INFO = "ARM_amir_ID_Stage_Reg_0_5,ID_Stage_Reg,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=ID_Stage_Reg,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* IP_DEFINITION_SOURCE = "module_ref" *)
+(* DowngradeIPIdentifiedWarnings = "yes" *)
+module ARM_amir_ID_Stage_Reg_0_5 (
+  clk,
+  rst,
+  clr,
+  WB_EN_in,
+  MEM_R_EN_in,
+  MEM_W_EN_in,
+  B_in,
+  S_in,
+  I_in,
+  EXE_CMD_in,
+  Dest_in,
+  status_in,
+  shift_operand_in,
+  Imm24_in,
+  PC_in,
+  Val_Rm_in,
+  Val_Rn_in,
+  WB_EN_out,
+  MEM_R_EN_out,
+  MEM_W_EN_out,
+  B_out,
+  S_out,
+  I_out,
+  EXE_CMD_out,
+  Dest_out,
+  status_out,
+  shift_operand_out,
+  Imm24_out,
+  PC_out,
+  Val_Rm_out,
+  Val_Rn_out
+);
+
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN ARM_amir_clk_1, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+input wire clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
+input wire rst;
+input wire clr;
+input wire WB_EN_in;
+input wire MEM_R_EN_in;
+input wire MEM_W_EN_in;
+input wire B_in;
+input wire S_in;
+input wire I_in;
+input wire [3 : 0] EXE_CMD_in;
+input wire [3 : 0] Dest_in;
+input wire [3 : 0] status_in;
+input wire [11 : 0] shift_operand_in;
+input wire [23 : 0] Imm24_in;
+input wire [31 : 0] PC_in;
+input wire [31 : 0] Val_Rm_in;
+input wire [31 : 0] Val_Rn_in;
+output wire WB_EN_out;
+output wire MEM_R_EN_out;
+output wire MEM_W_EN_out;
+output wire B_out;
+output wire S_out;
+output wire I_out;
+output wire [3 : 0] EXE_CMD_out;
+output wire [3 : 0] Dest_out;
+output wire [3 : 0] status_out;
+output wire [11 : 0] shift_operand_out;
+output wire [23 : 0] Imm24_out;
+output wire [31 : 0] PC_out;
+output wire [31 : 0] Val_Rm_out;
+output wire [31 : 0] Val_Rn_out;
+
+  ID_Stage_Reg inst (
+    .clk(clk),
+    .rst(rst),
+    .clr(clr),
+    .WB_EN_in(WB_EN_in),
+    .MEM_R_EN_in(MEM_R_EN_in),
+    .MEM_W_EN_in(MEM_W_EN_in),
+    .B_in(B_in),
+    .S_in(S_in),
+    .I_in(I_in),
+    .EXE_CMD_in(EXE_CMD_in),
+    .Dest_in(Dest_in),
+    .status_in(status_in),
+    .shift_operand_in(shift_operand_in),
+    .Imm24_in(Imm24_in),
+    .PC_in(PC_in),
+    .Val_Rm_in(Val_Rm_in),
+    .Val_Rn_in(Val_Rn_in),
+    .WB_EN_out(WB_EN_out),
+    .MEM_R_EN_out(MEM_R_EN_out),
+    .MEM_W_EN_out(MEM_W_EN_out),
+    .B_out(B_out),
+    .S_out(S_out),
+    .I_out(I_out),
+    .EXE_CMD_out(EXE_CMD_out),
+    .Dest_out(Dest_out),
+    .status_out(status_out),
+    .shift_operand_out(shift_operand_out),
+    .Imm24_out(Imm24_out),
+    .PC_out(PC_out),
+    .Val_Rm_out(Val_Rm_out),
+    .Val_Rn_out(Val_Rn_out)
+  );
+endmodule

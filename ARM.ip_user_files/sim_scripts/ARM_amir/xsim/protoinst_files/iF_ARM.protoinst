@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"iF_ARM": {
+			"proto_instances": {
+			}
+		}
+	}
+}

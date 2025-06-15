@@ -1,0 +1,90 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port Two_src -pg 1 -y 600 -defaultsOSRD
+preplace port imm -pg 1 -y 550 -defaultsOSRD
+preplace port WB_WB_EN_in -pg 1 -y 490 -defaultsOSRD
+preplace port rst_1 -pg 1 -y 390 -defaultsOSRD
+preplace port MEM_W_EN -pg 1 -y 610 -defaultsOSRD
+preplace port clk_1 -pg 1 -y 360 -defaultsOSRD
+preplace port S_in -pg 1 -y 280 -defaultsOSRD
+preplace port Hazard -pg 1 -y 720 -defaultsOSRD
+preplace portBus RM_in -pg 1 -y 70 -defaultsOSRD
+preplace portBus EXE_CMD_out -pg 1 -y 710 -defaultsOSRD
+preplace portBus Rm_Out -pg 1 -y 70 -defaultsOSRD
+preplace portBus RN_in -pg 1 -y 150 -defaultsOSRD
+preplace portBus RD_in -pg 1 -y 40 -defaultsOSRD
+preplace portBus MEM_R_EN_out -pg 1 -y 910 -defaultsOSRD
+preplace portBus B_out -pg 1 -y 1110 -defaultsOSRD
+preplace portBus MEM_W_EN_out -pg 1 -y 1010 -defaultsOSRD
+preplace portBus mode -pg 1 -y 220 -defaultsOSRD
+preplace portBus Val_Rm -pg 1 -y 440 -defaultsOSRD
+preplace portBus WB_Value_in -pg 1 -y 460 -defaultsOSRD
+preplace portBus Op_code -pg 1 -y 250 -defaultsOSRD
+preplace portBus status_in -pg 1 -y 800 -defaultsOSRD
+preplace portBus Val_Rn -pg 1 -y 410 -defaultsOSRD
+preplace portBus WB_Dest_in -pg 1 -y 430 -defaultsOSRD
+preplace portBus S_out -pg 1 -y 1210 -defaultsOSRD
+preplace portBus WB_EN_out -pg 1 -y 810 -defaultsOSRD
+preplace portBus cond_in -pg 1 -y 770 -defaultsOSRD
+preplace inst mux2to1_4bit_0 -pg 1 -lvl 4 -y 70 -defaultsOSRD
+preplace inst RegisterFile_0 -pg 1 -lvl 5 -y 430 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -y 710 -defaultsOSRD
+preplace inst ControlUnit_0 -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 5 -y 810 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 820 -defaultsOSRD
+preplace inst mux2to1_9bit_0 -pg 1 -lvl 4 -y 690 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 5 -y 910 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 5 -y 1010 -defaultsOSRD
+preplace inst ConditionCheck_0 -pg 1 -lvl 1 -y 790 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 5 -y 1110 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 5 -y 1210 -defaultsOSRD
+preplace inst OR_0 -pg 1 -lvl 3 -y 710 -defaultsOSRD
+preplace inst OR_1 -pg 1 -lvl 5 -y 600 -defaultsOSRD
+preplace inst Not_0 -pg 1 -lvl 2 -y 790 -defaultsOSRD
+preplace inst Not_1 -pg 1 -lvl 4 -y 550 -defaultsOSRD
+preplace netloc RD_in_1 1 0 4 NJ 40 NJ 40 NJ 40 830
+preplace netloc Op_code_0_1 1 0 2 NJ 250 280J
+preplace netloc Not_1_OUT 1 4 1 1070J
+preplace netloc xlslice_4_Dout 1 5 1 1400
+preplace netloc xlslice_3_Dout 1 5 1 1390
+preplace netloc xlslice_1_Dout 1 5 1 1390
+preplace netloc clk_1_1 1 0 5 NJ 360 280J 370 NJ 370 NJ 370 NJ
+preplace netloc cond_in_0_1 1 0 1 20J
+preplace netloc ControlUnit_0_mem_write 1 2 2 610 90 NJ
+preplace netloc S_0_1 1 0 2 NJ 280 NJ
+preplace netloc status_in_0_1 1 0 1 NJ
+preplace netloc xlslice_5_Dout 1 5 1 NJ
+preplace netloc ControlUnit_0_WB_Enable 1 2 1 620
+preplace netloc ControlUnit_0_Execute_Command 1 2 1 N
+preplace netloc OR_1_y 1 5 1 NJ
+preplace netloc Not_0_OUT 1 2 1 620
+preplace netloc Dest_wb_0_1 1 0 5 NJ 430 NJ 430 NJ 430 NJ 430 1070J
+preplace netloc mode_0_1 1 0 2 NJ 220 280J
+preplace netloc ControlUnit_0_B 1 2 1 630
+preplace netloc writeBackEn_0_1 1 0 5 NJ 490 NJ 490 NJ 490 NJ 490 NJ
+preplace netloc mux2to1_9bit_0_out 1 4 1 1080
+preplace netloc OR_0_y 1 3 1 N
+preplace netloc xlconstant_0_dout 1 3 1 830
+preplace netloc xlconcat_0_dout 1 3 1 820
+preplace netloc xlslice_2_Dout 1 5 1 1400
+preplace netloc rst_1_1 1 0 5 NJ 390 NJ 390 NJ 390 NJ 390 NJ
+preplace netloc b_0_1 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc IN_0_1 1 0 4 NJ 550 NJ 550 NJ 550 NJ
+preplace netloc ControlUnit_0_mem_read 1 2 1 N
+preplace netloc RM_in_1 1 0 4 NJ 70 NJ 70 NJ 70 820
+preplace netloc mux2to1_4bit_0_out 1 4 2 1080J 70 NJ
+preplace netloc RegisterFile_0_reg1 1 5 1 1390J
+preplace netloc src1_0_1 1 0 5 NJ 150 NJ 150 NJ 150 NJ 150 1070J
+preplace netloc ControlUnit_0_S_out 1 2 1 N
+preplace netloc RegisterFile_0_reg2 1 5 1 NJ
+preplace netloc b_1_1 1 0 5 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc xlslice_0_Dout 1 5 1 NJ
+preplace netloc Result_WB_0_1 1 0 5 20J 470 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc ConditionCheck_0_cond_out 1 1 1 NJ
+levelinfo -pg 1 0 150 450 730 960 1250 1420 -top -10 -bot 1270
+"
+}
+0

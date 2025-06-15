@@ -1,0 +1,7 @@
+Running: xsim.dir/iF_ARM_wrapper_behav/xsimk.exe -simmode gui -wdb iF_ARM_wrapper_behav.wdb -simrunnum 0 -socket 9915
+Design successfully loaded
+Design Loading Memory Usage: 6268 KB (Peak: 6268 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7128 KB (Peak: 7128 KB)
+Simulation CPU Usage: 31 ms

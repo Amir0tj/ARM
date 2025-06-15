@@ -1,0 +1,251 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF088A9033ED90AB0",
+      "device": "xc7z010clg400-1",
+      "name": "iF_ARM",
+      "synth_flow_mode": "Singular",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "xlconstant_0": "",
+      "blk_mem_gen_2": "",
+      "MUX2to1_0": "",
+      "REG_0": "",
+      "Adder_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "in2_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "select_0": {
+        "direction": "I"
+      },
+      "enable_0": {
+        "direction": "I"
+      },
+      "freeze_0": {
+        "direction": "I"
+      },
+      "flush_0": {
+        "direction": "I"
+      },
+      "instruction": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "pc": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "iF_ARM_xlconstant_0_0",
+        "parameters": {
+          "CONST_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "blk_mem_gen_2": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "iF_ARM_blk_mem_gen_2_1",
+        "parameters": {
+          "Coe_File": {
+            "value": "c:/Users/amiri/OneDrive/Desktop/output.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "MUX2to1_0": {
+        "vlnv": "xilinx.com:module_ref:MUX2to1:1.0",
+        "xci_name": "iF_ARM_MUX2to1_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MUX2to1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "select": {
+            "direction": "I"
+          },
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "REG_0": {
+        "vlnv": "xilinx.com:module_ref:REG:1.0",
+        "xci_name": "iF_ARM_REG_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "REG",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Adder_0": {
+        "vlnv": "xilinx.com:module_ref:Adder:1.0",
+        "xci_name": "iF_ARM_Adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "REG_0_out": {
+        "ports": [
+          "REG_0/out",
+          "blk_mem_gen_2/addra",
+          "Adder_0/in2"
+        ]
+      },
+      "MUX2to1_0_out": {
+        "ports": [
+          "MUX2to1_0/out",
+          "REG_0/in"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "blk_mem_gen_2/clka",
+          "REG_0/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "REG_0/rst"
+        ]
+      },
+      "in2_0_1": {
+        "ports": [
+          "in2_0",
+          "MUX2to1_0/in2"
+        ]
+      },
+      "select_0_1": {
+        "ports": [
+          "select_0",
+          "MUX2to1_0/select"
+        ]
+      },
+      "enable_0_1": {
+        "ports": [
+          "enable_0",
+          "REG_0/enable"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "Adder_0/in1"
+        ]
+      },
+      "blk_mem_gen_2_douta": {
+        "ports": [
+          "blk_mem_gen_2/douta",
+          "instruction"
+        ]
+      },
+      "Adder_0_out": {
+        "ports": [
+          "Adder_0/out",
+          "pc",
+          "MUX2to1_0/in1"
+        ]
+      }
+    }
+  }
+}
